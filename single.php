@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My blog</title>
+    <title>Single_post</title>
     <!--   fontawesome   -->
     <script src="https://kit.fontawesome.com/506ba669db.js" crossorigin="anonymous"></script>
     <!--   bootstrap    -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--    css.style   -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--    Шрифты гугла    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,20 +23,20 @@
         <div class="row">
             <div class="col-4">
                 <h1>
-                    <a href="/">My blog</a>
+                    <a href="#">My blog</a>
                 </h1>
             </div>
 
             <nav class="col-8">
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
+                    <li><a href="index.php">Главная</a></li>
+                    <li><a href="o_nas.php">О нас</a></li>
                     <li><a href="#">Услуги</a></li>
 
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-user"></i>
-                             Кабинет
+                            Кабинет
                         </a>
                         <ul>
                             <li><a href="#">Админ панель</a></li>
@@ -49,139 +49,31 @@
     </div>
 
 </header>
-<!--Блок карусели-->
 
-<div class="container ">
-    <div class="row">
-        <h2 class="slider-title">Топ публикации</h2>
-    </div>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/image_1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption-hack carousel-caption d-none d-md-block">
-                    <h5><a href="">First slide label</a></h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/image_2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption-hack carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/image_3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption-hack  carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-<!--  Блок карусели конец  -->
 <!--    Блок мейн   -->
 <div class="container">
     <div class="content row">
         <!--  Мейн контент  -->
         <div class="main-content col-md-9 col-12">
-            <h2>Последние публикация</h2>
+            <h2>Загаловок статьи Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis eos odit omnis voluptatem, voluptates!</h2>
 
-            <div class="post row">
-                <div class="img col-12 col-md-4">
-                    <img src="images/image_3.jpg" alt="" class="img-thumbnail">
+            <div class="single_post row">
+                <div class="img col-12">
+                    <img src="assets/images/image_3.jpg" alt="" class="img-thumbnail">
                 </div>
-
-                <div class="post_text col-12 col-md-8">
-                    <h3>
-                        <a href="#">Прикольная статья на тему динамического сайта...</a>
-                    </h3>
+                <div class="info">
                     <i class="far fa-user">Имя автора</i>
                     <i class="far fa-calendar">3 ноября 2022</i>
-                    <p class="prieview-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Dolore, officia!
-                    </p>
                 </div>
-            </div>
-            <div class="post row">
-                <div class="img col-12 col-md-4">
-                    <img src="images/image_3.jpg" alt="" class="img-thumbnail">
-                </div>
+                <div class="single_post_text col-12 ">
+                    <h3>Загаловок третьего уровня</h3>
+                    <p>Lorem ipsum <a href="#">dolor</a>  sit amet, consectetur adipisicing elit. A aperiam beatae dolore eaque eligendi est et exercitationem facilis, impedit ipsa ipsum maxime neque officia optio quas rem, tempore! Harum quaerat quo vel voluptates! Excepturi iusto optio voluptates? Aliquam autem beatae consectetur enim error harum illo illum iusto voluptatum? A animi commodi consequatur cumque cupiditate doloremque excepturi impedit molestias, nostrum, quaerat repellendus rerum suscipit voluptatum. Atque cupiditate distinctio dolorum incidunt inventore iste, itaque laboriosam molestias qui quod ratione sint, ut velit? Alias asperiores illo inventore ipsam laudantium, natus, nemo nihil nostrum optio pariatur perspiciatis provident quia, reprehenderit sit sunt vel voluptas? Eos, quisquam, veritatis? Aliquid architecto dolorem in, laborum mollitia nihil obcaecati. Accusantium adipisci aliquam assumenda aut blanditiis corporis debitis deleniti dignissimos eaque eligendi eum eveniet expedita harum hic impedit laboriosam minus natus non omnis quia quis quo quod quos rerum saepe similique voluptate, voluptatem. A assumenda aut beatae commodi, consectetur cumque, deleniti dolor eius eveniet incidunt nulla numquam pariatur, possimus quae quaerat quasi qui quidem quo sint soluta suscipit unde voluptatum! A, amet corporis culpa cupiditate debitis deleniti eius enim error, exercitationem fugiat illo impedit ipsa ipsam necessitatibus nisi odio officia porro quam recusandae reiciendis repellat temporibus vitae voluptate, voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis illo maxime quam qui totam. Autem beatae deleniti earum eligendi, eum itaque officiis, perspiciatis quae quibusdam, quod repellendus voluptatibus voluptatum. Adipisci at culpa distinctio dolores eum ex excepturi facilis fugit inventore ipsum minus nisi obcaecati omnis quaerat, qui quia reiciendis sed sit suscipit tenetur ut vel velit voluptas voluptate voluptates. Esse facilis ipsum iste laboriosam porro quo veniam? Distinctio dolore eius eum neque nesciunt nostrum omnis quos reprehenderit sequi sint sit tempora tenetur, voluptate? Esse exercitationem explicabo, possimus repellendus rerum vel veritatis. Aliquid amet beatae consequatur culpa delectus distinctio dolorum ea eligendi enim eos eum, explicabo facere ipsa ipsum itaque iusto maxime, mollitia officia placeat praesentium quam quia reprehenderit, sit suscipit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, alias, beatae dicta distinctio fugiat impedit ipsam nobis nulla omnis praesentium qui, repellendus veritatis voluptates.</p>
 
-                <div class="post_text col-12 col-md-8">
-                    <h3>
-                        <a href="#">Прикольная статья на тему динамического сайта...</a>
-                    </h3>
-                    <i class="far fa-user">Имя автора</i>
-                    <i class="far fa-calendar">3 ноября 2022</i>
-                    <p class="prieview-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Dolore, officia!
-                    </p>
                 </div>
             </div>
 
-            <div class="post row">
-                <div class="img col-12 col-md-4">
-                    <img src="images/image_3.jpg" alt="" class="img-thumbnail">
-                </div>
-
-                <div class="post_text col-12 col-md-8">
-                    <h3>
-                        <a href="#">Прикольная статья на тему динамического сайта...</a>
-                    </h3>
-                    <i class="far fa-user">Имя автора</i>
-                    <i class="far fa-calendar">3 ноября 2022</i>
-                    <p class="prieview-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Dolore, officia!
-                    </p>
-                </div>
-            </div>
-
-            <div class="post row">
-                <div class="img col-12 col-md-4">
-                    <img src="images/image_3.jpg" alt="" class="img-thumbnail">
-                </div>
-
-                <div class="post_text col-12 col-md-8">
-                    <h3>
-                        <a href="#">Прикольная статья на тему динамического сайта...</a>
-                    </h3>
-                    <i class="far fa-user">Имя автора</i>
-                    <i class="far fa-calendar">3 ноября 2022</i>
-                    <p class="prieview-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Dolore, officia!
-                    </p>
-                </div>
-            </div>
-
-            <div class="post row">
-                <div class="img col-12 col-md-4">
-                    <img src="images/image_3.jpg" alt="" class="img-thumbnail">
-                </div>
-
-                <div class="post_text col-12 col-md-8">
-                    <h3>
-                        <a href="#">Прикольная статья на тему динамического сайта...</a>
-                    </h3>
-                    <i class="far fa-user">Имя автора</i>
-                    <i class="far fa-calendar">3 ноября 2022</i>
-                    <p class="prieview-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Dolore, officia!
-                    </p>
-                </div>
-            </div>
         </div>
         <!--   сайдбар контент -->
         <div class="sidebar col-md-3 col-12">
@@ -250,7 +142,7 @@
             <div class="footer-section contact-form col-md-4 col-12">
                 <h3>Контакты</h3>
                 <br>
-                <form action="index.html" method="post">
+                <form action="index.php" method="post">
                     <input type="email" name="email" class="text-input contact-input" placeholder="Your email adress...">
                     <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="4"></textarea>
                     <button type="submit" class="btn btn-big contact-btn">
