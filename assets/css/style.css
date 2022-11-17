@@ -301,14 +301,39 @@ header ul li ul li a {
     height: 3.3rem;
 
 }
-.reg_form a{
+/*reg.php*/
+.reg_form a.vhod{
     font-size: 1.2em;
     transition: all 0.3s;
     color: #5c5b5b;
-    text-decoration: none;
-    margin-left: 85px;
+    text-decoration: underline;
+    margin-left: 95px;
 }
-.reg_form a:hover{
-    margin-left: 80px;
+.reg_form a:hover.vhod{
+    text-decoration: none;
+    margin-left: 90px;
     transition: all .3s;
+}
+/*log.php*/
+.reg_form a.reg{
+    font-size: 1.2em;
+    transition: all 0.3s;
+    color: #5c5b5b;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+.reg_form a:hover.reg{
+    text-decoration: none;
+    margin-left: 25px;
+    transition: all .3s;
+}
+
+/*
+    Forms
+*/
+form div.err {
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+
 }
