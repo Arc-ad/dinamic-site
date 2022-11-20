@@ -1,7 +1,7 @@
 <!--HEADER-->
 <?php
-    include("app/include/header.php");
-    include("app/controllers/users.php");
+    include_once "app/include/header.php";
+    include_once "app/controllers/users.php";
 ?>
 <!--HEADER END-->
 

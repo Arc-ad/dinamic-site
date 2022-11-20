@@ -1,5 +1,7 @@
 <?php
-require('connect.php');
+session_start();
+require 'connect.php';
+
 //ф-ция вывода запроса
 function tt($value){
     echo '<pre>';

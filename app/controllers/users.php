@@ -1,5 +1,6 @@
 <?php
-include("app/database/db.php");
+include_once "app/database/db.php";
+
 $errMsg = '';
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $admin = 0;
@@ -15,17 +16,30 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     } else if($passF !== $passS) {
         $errMsg = 'Пароли в обоих полях должны быть одинаковыми';
     }  else {
-        $pass = password_hash($passF, PASSWORD_DEFAULT);
-        $post = [
-            'admin' => $admin,
-            'username' => $login,
-            'email' => $email,
-            'password' => $pass
-        ];
+        $existence = selectOne('users', ['email' => $email]);
+        if (!empty($existence['email']) && $existence['email'] === $email){
+            $errMsg = 'Пользователь с такой почтой уже зарегистрирован!';
+        }else{
+            $pass = password_hash($passF, PASSWORD_DEFAULT);
+            $post = [
+                'admin' => $admin,
+                'username' => $login,
+                'email' => $email,
+                'password' => $pass
+            ];
 
-    $id = insert('users', $post);
+            $id = insert('users', $post);
+            $user = selectOne('users', ['id_user' => $id]);
 
-
+            $_SESSION['id'] = $user['id_user'];
+            $_SESSION['login'] = $user['username'];
+            $_SESSION['admin'] = $user['admin'];
+            if($_SESSION['admin']) {
+                header('location: ' . admin/admin.php);
+            }else{
+                header('location: ' . BASE_URL);
+            }
+        }
     }
 
 //    $last_row = selectOne('users', ['id_user' => $id]);

@@ -1,5 +1,7 @@
 <!--HEADER-->
-<?php include("app/include/header.php"); ?>
+<?php
+        include"app/include/header.php";
+?>
 <!--HEADER END-->
 
 <!--Блок карусели-->
