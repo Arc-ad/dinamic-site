@@ -1,6 +1,6 @@
 <?php
     include_once "app/database/db.php";
-    include "path.php";
+    include_once "path.php";
 ?>
 <!doctype html>
 <html lang="en">
